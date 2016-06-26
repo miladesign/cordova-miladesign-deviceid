@@ -1,0 +1,39 @@
+{
+  "name": "cordova-miladesign-deviceid",
+  "version": "1.0.0",
+  "description": "Get Device Id",
+  "cordova": {
+    "id": "cordova-miladesign-deviceid",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladesign/cordova-miladesign-deviceid.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "ad",
+    "deviceid",
+    "monetisation",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+"devDependencies": {
+    "cordova": ">=3.0.0"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Milad Mohammadi",
+  "license": "miladesign",
+  "bugs": {
+    "url": "https://github.com/miladesign/cordova-miladesign-deviceid/issues"
+  },
+  "homepage": "https://github.com/miladesign/cordova-miladesign-deviceid#readme"
+}

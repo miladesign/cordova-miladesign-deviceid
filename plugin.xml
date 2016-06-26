@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-deviceid"
+    version="1.0.0">
+	
+    <name>Unique Device ID</name>
+    <description>Cordova unique device id (UUID) plugin for Android</description>
+    <author>Milad Mohammadi</author>	
+    <license>miladesign.ir</license>
+    <keywords>cordova,plugin,device,id,uuid,unique</keywords>
+    <repo>https://github.com/miladesign/cordova-miladesign-deviceid</repo>
+    <issue>https://github.com/miladesign/cordova-miladesign-deviceid/issues</issue>	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+ 	
+    <js-module src="www/uniqueid.js">
+        <clobbers target="window.plugins.uniqueDeviceID" />
+    </js-module>    
+    
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="UniqueDeviceID">
+				<param name="android-package" value="ir.miladesign.deviceid.plugins.UniqueDeviceID"/>
+			</feature>
+		</config-file>
+
+		<source-file src="src/android/UniqueDeviceID.java" target-dir="src/ir/miladesign/deviceid/plugins"/>
+	</platform>
+	
+</plugin>
